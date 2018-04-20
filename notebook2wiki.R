@@ -1,0 +1,5 @@
+library(synapser)
+synLogin()
+source("~/src/notebook2wiki-src.R")
+arg <- commandArgs(trailingOnly = TRUE)
+notebook2wiki(arg[1], arg[2])

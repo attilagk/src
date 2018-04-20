@@ -1,0 +1,7 @@
+library(synapser)
+library(knitr)
+library(knit2synapse)
+synLogin()
+source("~/src/myknit2synapse-src.R")
+arg <- commandArgs(trailingOnly = TRUE)
+myknit2synapse(arg[1], arg[2])

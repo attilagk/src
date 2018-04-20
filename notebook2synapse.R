@@ -1,0 +1,7 @@
+library(synapser)
+library(knitr)
+#library(rmarkdown)
+synLogin()
+source("~/src/notebook2synapse-src.R")
+arg <- commandArgs(trailingOnly = TRUE)
+notebook2synapse(arg[1], arg[2])
